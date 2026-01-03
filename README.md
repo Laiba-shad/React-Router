@@ -1,87 +1,35 @@
-# Welcome to React Router!
+# ReactRouter Demo App
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A small React application demonstrating client-side routing with React Router and UI built with Material UI. Includes a header, features section, footer and several route pages (home, about, contact, welcome).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Highlights
+- React Router based routing structure
+- Material UI used for layout and components (AppBar, Toolbar, Grid, Card, Button, Typography, etc.)
+- Component-driven structure: Header, FeatureSection, Footer
+- Simple, responsive demo suitable as a starter or learning project
 
-## Features
+## Project structure
+- app/
+  - homepage/HomePage.tsx
+  - components/FeatureSection.tsx
+  - components/Header.tsx
+  - components/Footer.tsx
+  - routes/ (home, about, contact, welcome)
+  - root.tsx, routes.ts, app.css
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## How to run (Windows)
+1. Install deps:
+   ```
+   npm install
+   ```
+2. Start dev server:
+   ```
+   npm start
+   ```
+   (or `npm run dev` if using Vite)
 
-## Getting Started
+## Notes on Material UI work
+Material UI is used for theming and core UI elements in Header, FeatureSection and Footer. Styles and layout leverage MUI's Grid and Card systems along with AppBar/Toolbar for the top navigation. Swap or extend components quickly via MUI theming.
 
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+## License
+Add your preferred license (e.g., MIT).
